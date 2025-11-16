@@ -6,7 +6,7 @@ from tkinter import messagebox, ttk
 # --- Database Setup ---
 # Define database path
 
-# --- Database Setup ---
+
 db_path = Path("ToDoDataBase.db")
 conn = sqlite3.connect(db_path)
 cursor = conn.cursor()
