@@ -1,81 +1,47 @@
+# ToDo Manager Application 📋
 
-# TODO Manager (GUI + SQLite)
+A simple ToDo list management application built with **Python**, **Tkinter** for the graphical user interface, and **SQLite** for database storage.
 
-Simple task manager app built with **Python**, **Tkinter**, and **SQLite**.
-The app lets users:
-- Add tasks
-- Update tasks
-- Delete tasks
-- Search tasks by name
-- View all tasks in a clean GUI
+## ✨ Features
 
-## Features
-- Lightweight and fast
-- Local SQLite database (no setup needed)
-- Elegant and simple GUI
-- Search functionality (partial match supported)
-- Auto-refresh task list after every action
+* **Add Tasks:** Easily add new tasks with a name and description.
+* **View Tasks:** Display all tasks in a clear, tabular view.
+* **Update Tasks:** Select a task from the list, modify its details in the input fields, and save the changes.
+* **Delete Tasks:** Remove completed or unwanted tasks from the list.
+* **Search Functionality:** Search tasks by Task Name, Description, or their unique ID.
+* **Database Persistence:** All tasks are saved to a local SQLite database file.
+* **Arabic Interface:** The user interface elements (buttons, labels) are displayed in Arabic for user convenience.
 
-## Requirements
-- Python 3.10+
-- No external libraries needed (Tkinter + SQLite are built‑in)
+## 🚀 Getting Started
 
-## How to Run
-1. Clone the repository:
-```
-git clone https://github.com/yourusername/todo-gui-app.git
-```
-2. Open the folder:
-```
-cd todo-gui-app
-```
-3. Run the app:
-```
-python app.py
-```
+### Prerequisites
 
-A local database file named **ToDoDataBase.db** will be created automatically if it doesn't exist.
+You need to have **Python 3.x** installed. Tkinter is usually included with standard Python installations.
 
-## Project Structure
-```
-📂 todo-gui-app
-│── app.py               # Main application (GUI + logic)
-│── ToDoDataBase.db      # SQLite DB (auto-created)
-│── README.md            # Project documentation
-```
+### Installation and Setup
 
-## Screenshots
-(You can add these later after you take screenshots of your GUI)
-```
-📸 ui_home.png       # Main interface
-📸 ui_search.png     # Search example
+1.  **Clone the repository** (if hosted, otherwise save the code above as a Python file, e.g., `todo_app.py`).
 
-```
+2.  **Run the application** from your terminal:
 
-## GitHub Repository Description
-A simple Python GUI Todo App using Tkinter and SQLite. Supports adding, updating, deleting, and searching tasks with a clean interface.
+    ```bash
+    python todo_app.py
+    ```
 
-## .gitignore
-Add this file to avoid committing local DB files:
-```
-# Ignore SQLite database
-*.db
-__pycache__/
-*.pyc
-```
+3.  The application will automatically create the SQLite database file named `ToDoDataBase.db` in the specified path:
+    
+    > **Note:** Make sure to adjust the `db_path` variable in the Python file to a path relevant to your machine, or simply use `db_path = Path("ToDoDataBase.db")` to create the file in the same directory as the script.
 
-## Recommended Commit Messages
-- "Initialize project structure and main app"
-- "Add GUI layout and database setup"
-- "Implement CRUD operations"
-- "Add search by name feature"
-- "Clean code and update README"
+## 🛠 Project Structure
 
-## Notes
-- You can safely upload this project to GitHub.
-- No sensitive information is stored or required.
-- The database path is relative so the app works on any machine.
+* `todo_app.py`: The main Python script containing the application logic (GUI, SQLite connection, and CRUD functions).
+* `ToDoDataBase.db`: The SQLite database file where tasks are stored (automatically generated on first run).
 
-## License
-This project is free to use and modify.
+## 💡 How to Use
 
+1.  **Adding a Task:** Enter the **اسم المهمة** (Task Name) and **الوصف** (Description) and click the **إضافة** (Add) button.
+2.  **Viewing/Selecting:** Click any row in the table to display its details in the input fields.
+3.  **Updating a Task:** Select a task, edit the text in the input fields, and click the **تحديث** (Update) button.
+4.  **Searching:** Use the search bar to filter tasks by ID, Name, or Description. Click **عرض الكل** (View All) to reset the search.
+
+---
